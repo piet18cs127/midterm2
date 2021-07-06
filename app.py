@@ -5,9 +5,9 @@ from flask_ngrok import run_with_ngrok
 import pickle
 app = Flask(__name__)
 from keras.models import load_model
-model = load_model('/content/drive/My Drive/midterm2.pkl')
+model = load_model('midterm2.pkl')
 # Importing the dataset
-dataset = pd.read_csv('/content/dataset.csv')
+dataset = pd.read_csv('dataset.csv')
 # Extracting dependent and independent variables:
 # Extracting independent variable:
 X = dataset.iloc[:, :-1].values
